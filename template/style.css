@@ -1,0 +1,222 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: black;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif!important;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.left{
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.middle, .middle:before {
+    vertical-align: middle;
+}
+
+.page-header {
+    height: 100px;
+    width: 100%;
+}
+
+.satellite {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    background: rgb(255, 255, 255);
+    border-bottom: 5px solid #e4e4e4;
+}
+
+.satellite>.table {
+    width: 100%;
+    height: 99px;
+    table-layout: fixed;
+}
+
+table{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.table .cell {
+    display: table-cell;
+}
+
+.satellite>.table .pos-1 {
+    width: 30%;
+}
+
+.satellite>.table .pos-1{
+    width: 29%;
+    padding-left: 35px;
+    font-size: 0;
+    display: table-cell!important;
+}
+
+.satellite>.table .pos-2 {
+    font-size: 0;
+    display: table-cell!important;
+}
+
+.satellite>.table .pos-3 {
+    width: 210px;
+}
+
+.satellite>.table .pos-3 {
+    width: 26%;
+    font-size: 0;
+    display: table-cell!important;
+}
+
+.satellite .logo {
+    padding-left: 630px;
+    width: 215px;
+    height: 90px;
+    font-size: 0;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    background-image: url(Images/Logo/ITBANK.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.satellite .bankingBttn.cliente{
+    display: none!important;
+}
+
+.satellite .bankingBttn {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.satellite .bankingBttn {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 300;
+    color: #1e1e1e;
+    line-height: 40px;
+    position: relative;
+    -webkit-transition: color .4s,background-color .4s,border .4s;
+    -moz-transition: color .4s,background-color .4s,border .4s;
+    -ms-transition: color .4s,background-color .4s,border .4s;
+    transition: color .4s,background-color .4s,border .4s;
+    border: 10px solid #dbdcdd;
+    /* -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    margin-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.satellite .bankingBttn.dark {
+    background-color: #494f51;
+    border-color: #494f51;
+    color: #fff;
+}
+
+.satellite .bankingBttn.dark:hover {
+    background-color: #cccccc;
+    border-color: #cccccc;
+    color: rgb(0, 0, 0);
+}
+
+.satellite .bankingBttn.yell {
+    /* background-color: #dddddd;
+    border-color: #dddddd; */
+    background-color: white;
+    border-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.satellite .bankingBttn.yell:hover {
+    background-color: #494f51;
+    border-color: #494f51;
+    color: rgb(255, 255, 255);
+}
+
+.mainContent {
+    display: flex;
+    padding-top: 50px;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 100px;
+}
+
+.mainContent>.texto-1{
+    width: 30%;
+    display: block;
+    margin-left: 12%;
+    margin-right: 5%;
+    margin-bottom: 18%;
+    text-align: left;
+    border-right: solid black 10px;
+    border-bottom: solid black 10px;
+}
+.mainContent>.titulo-1{
+    width: 30%;
+    padding-left: 10px;
+    margin-left: 15%;
+    margin-right: 2%;
+    margin-bottom: 22%;
+    
+}
+
+.titulo-1>.subtitulo-1{
+    width: 30%;
+    color: #535353;
+    border-bottom: #535353 1rem;
+}
+
+.mainContent>.imagen-1{
+    max-width: 800px;
+    border-top: solid black 10px;
+    border-left: solid black 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+footer{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    border-top: 5px solid #e4e4e4;
+
+}
+
+footer p{
+    padding: 10px;
+    text-align: center;
+    margin-left: 5px;
+}
