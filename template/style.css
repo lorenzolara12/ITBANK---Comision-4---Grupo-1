@@ -1,0 +1,48 @@
+.logo{
+    display:inline;
+    height: 8vh;
+}
+
+h1,h2,h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav{
+    display: flex;
+}
+
+.navbar{
+    list-style-type:none;
+    display: inline;
+}
+
+.nav-item{
+    display: inline;
+    padding: 2vh 5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f44336;
+    color: white;
+}
+
+.nav-item:hover{
+    background-color: blue;
+}
+
+@media screen and (min-width: 480px) and (max-width: 780px){
+    body {
+        background-color: silver;
+    }
+    .navbar{
+        display: none;
+    }
+}
+@media screen and (min-width: 780px) and (max-width: 1024px){
+    body {
+        background-color: grey;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1600px){
+    body {
+        background-color: lightsalmon;
+    }
+}
