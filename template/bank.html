@@ -95,7 +95,7 @@
 
             <div class="col-4 col-lg-2 g-5">
                 <a class="btn btn-light btn-outline-success btn-lg shadow-lg " data-bs-toggle="collapse" data-bs-target="#transferencia" aria-expanded="false" aria-controls="transferencia" href="#" role="button">
-                    <img src="./Images/support.png" class="img-fluid">
+                    <img src="./Images/support.png" class="img-fluid"> 
                 </a>
                 Transferencia
             </div>
@@ -124,26 +124,20 @@
                 <div class="collapse" id="transferencia" data-bs-parent="#accordion">
                   <div class="row justify-content-center">
                     <div class="col-12 col-lg-6 bg-light g-5">
-                        <form>
-                            <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Email address</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleInputPassword1" class="form-label">Password</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1">
-                              <span id="passwordHelpInline" class="form-text">
-                                Must be 8-20 characters long.
-                              </span>
-                            </div>
-                            <div class="mb-3 form-check">
-                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                            </div>
-                            <a class="btn btn-light btn-outline-success btn-lg shadow-lg" href="./template/bank.html" role="button">LOGIN
-                            </a>
-                          </form>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <span class="input-group-text">.00</span>
+                        </div>
+                        <div class="mb-3"> 
+                          <label for="formGroupExampleInput" class="form-label">CBU</label>
+                          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="EJ:0000551778933652254665">
+                        </div>
+                        <div class="mb-3">
+                          <label for="formGroupExampleInput2" class="form-label">Motivo</label>
+                          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="EJ:Pago Servicios">
+                      </div>
+                      <button type="button" class="btn btn-primary" >ACEPTAR</button>
                     </div>
                   </div>
                 </div>
@@ -154,24 +148,25 @@
                   <div class="row justify-content-center">
                     <div class="col-12 col-lg-6 bg-light g-5">
                         <form>
-                            <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Email address</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleInputPassword1" class="form-label">Password</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1">
-                              <span id="passwordHelpInline" class="form-text">
-                                Must be 8-20 characters long.
-                              </span>
-                            </div>
-                            <div class="mb-3 form-check">
-                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                            </div>
-                            <a class="btn btn-light btn-outline-success btn-lg shadow-lg" href="./template/bank.html" role="button">LOGIN
-                            </a>
+                          <label for="customRange3" class="form-label">Monto</label>
+                          <input type="range" class="form-range" min="0" max="50" step="0,5" id="customRange3"
+                          >
+                          <button type="button" class="btn btn-primary" >ACEPTAR</button>
+                          <datalist id="customRange3">
+                            <option value="0">
+                            <option value="10">
+                            <option value="20">
+                            <option value="30">
+                            <option value="40">
+                            <option value="50">
+                            <option value="60">
+                            <option value="70">
+                            <option value="80">
+                            <option value="90">
+                            <option value="100">
+                          </datalist>
+                          
+                          
                           </form>
                     </div>
                   </div>
@@ -183,24 +178,17 @@
                   <div class="row justify-content-center">
                     <div class="col-12 col-lg-6 bg-light g-5">
                         <form>
-                            <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Email address</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                          <div class="card">
+                            <div class="card-header">
+                              Soporte Tecnico
                             </div>
-                            <div class="mb-3">
-                              <label for="exampleInputPassword1" class="form-label">Password</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1">
-                              <span id="passwordHelpInline" class="form-text">
-                                Must be 8-20 characters long.
-                              </span>
+                            <div class="card-body">
+                              <h5 class="card-title">Atencion las 24hs</h5>
+                              <p class="card-text">TEl:0800-999-2400</p>
+                              <a href="#" class="btn btn-primary">LLAMAR</a>
                             </div>
-                            <div class="mb-3 form-check">
-                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                            </div>
-                            <a class="btn btn-light btn-outline-success btn-lg shadow-lg" href="./template/bank.html" role="button">LOGIN
-                            </a>
+                          </div>
+                            
                           </form>
                     </div>
                   </div>
