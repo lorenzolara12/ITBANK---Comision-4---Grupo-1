@@ -1,45 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="../css/custom.css">
 </head>
 <body>
-    <nav class="satellite">
-        <div class="table">
-            <div class="cell pos-2 center middle" >
-                <a href="/index.html" class="logo">ITBANK</a>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../template/bank.html">
+                    <img src="./Images/Logo/ITBANK.png" alt="" width="150" height="75" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    </ul>
+                    <a class="btn btn-outline-success btn-lg" href="../index.html">LOG OUT</a>
+                  </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-12 col-lg-6 g-5">
+                <div class="p-3 border bg-light shadow-lg bg-body rounded ">
+                    <h1>Balance Total</h1>
+                    <h2>$ 999.999.999,999</h2>
+                    <h2>U$D 999.999.999,999</h2>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 g-5" >
+                <div class="p-3 border bg-light shadow-lg bg-body rounded">
+                    <h1>Credito Acumulado</h1>
+                    <h2>$ 999.999.999,999</h2>
+                    <h2>U$D 999.999.999,999</h2>
+                </div>
             </div>
         </div>
-    </nav>
-    <div class="grid-container-bank">
-        <div class="grid-item-bank grid-item-1" >
+
+        <div class="row justify-content-center text-center">
+            <div class="col-4 col-lg-2 g-5">
+                <a class="btn btn-light btn-outline-success btn-lg shadow-lg" href="#" role="button">
+                    <img src="./Images/support.png" class="img-fluid">
+                </a>
+                Transferencia
+            </div>
+            <div class="col-4 col-lg-2 g-5">
+                <a class="btn btn-light btn-outline-success btn-lg shadow-lg" href="#" role="button">
+                    <img src="./Images/support.png" class="img-fluid">
+                </a>
+                Prestamo
+            </div>
+            <div class="col-4 col-lg-2 g-5">
+                <a class="btn btn-light btn-outline-success btn-lg shadow-lg" href="#" role="button">
+                    <img src="./Images/support.png" class="img-fluid">
+                </a>
+                Soporte
+            </div>
         </div>
-        <div class="grid-item-bank grid-item-2 botleftborder">
-            <h1>Saldo:</h1>
-            <h1>$000.000,00</h1>
-            <h2>CBU: 99999999</h2>
-        </div>
-        <div class="grid-item-bank grid-item-3 botleftborder">
-            <h1>Credito Acumulado:</h1>
-            <h1>$000.000,00</h1>
-            <h2>Tarjeta: 0000 0000 000 000</h2>
-        </div>
-        <div class="grid-item-bank grid-item-4 botleftborder">
-            <h1>Transferencias</h1>
-        </div>
-        <div class="grid-item-bank grid-item-5 botleftborder">
-            <h1>Prestamos</h1>
-        </div>
+        <!-- <div class="row  text-center">
+            <div class="col-4 col-lg-4 g-5">
+                <div class="h-100">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">
+                        <img src="./Images/transferencia.png" class="img-thumbnail">
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 col-lg-4 g-5 ">
+                <a class="btn btn-secondary btn-lg" href="#" role="button">Prestamo</a>
+            </div>
+            <div class="col-4 col-lg-4 g-5">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Soporte</a>
+            </div>
+        </div> -->
     </div>
-    <footer>
-        <p>Autor: Lorenzo Lara</p>
-        <p><a>Mail: lorenzolara12@gmail.com</a></p>
-        <p>Comision 4</p>
-        <p>Grupo 1</p>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

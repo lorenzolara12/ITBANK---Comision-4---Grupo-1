@@ -1,56 +1,56 @@
-<!-- Tendriamos 3 colores:
-        Background Principal : #e6e6e6
-        Background Secundario : #262625
-        Highlight Color : #1541a8   -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/template/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./css/custom.css">
 </head>
 <body>
-    <nav class="satellite">
-        <div class="table">
-            <div class="cell pos-1 left middle">
-                <a href="/template/login.html" class="bankingBttn dark">Placeholder</a>
-            </div>
-            <div class="cell pos-2 center middle " >
-                <a href="/index.html" class="logo">ITBANK</a>
-            </div>
-            <div class="cell pos-3 right middle">
-                <a href="/template/bank.html" class="bankingBttn dark">Online Banking</a>
-            </div>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./template/Images/Logo/ITBANK.png" alt="" width="150" height="75" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    </ul>
+                    <a class="btn btn-outline-success btn-lg" href="./template/login.html">HOME BAKING</a>
+                  </div>
+        </nav>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-    </nav>
-    <div class="page-header"></div>
-    <!-- <img src="Images/principal.jpg" style="width: 1500px;padding-left: 110px;"> -->
-    
-        
-            <div class="container-home">
-                <div class="grid-home-1 botleftborder">
-                    <h1 class="titulo-1">Preocupate por disfrutar, que nosotros nos preocupamos por tus finanzas.</h1>
-                </div>
-                <div class="grid-home-2 botleftborder">
-                    <h3 class="subtitulo-1">Descubri una nueva forma de administrar tus cuentas.</h3>
-                </div>
-                <div class="grid-home-3 topborder">
-                    <img src="/template/Images/principal-2.jpg">
-                </div>
-            </div>
-        
-    
-    <footer>
-        <p>Autor: Lorenzo Lara</p>
-        <p><a>Mail: lorenzolara12@gmail.com</a></p>
-        <p>Comision 4</p>
-        <p>Grupo 1</p>
-    </footer>
-
-    
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./template/Images/slide-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./template/Images/slide-2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./template/Images/slide-3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
-
