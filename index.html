@@ -1,56 +1,101 @@
-<!-- Tendriamos 3 colores:
-        Background Principal : #e6e6e6
-        Background Secundario : #262625
-        Highlight Color : #1541a8   -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/template/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./css/custom.css">
+    <!-- Font Awesome CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="satellite">
-        <div class="table">
-            <div class="cell pos-1 left middle">
-                <a href="/template/login.html" class="bankingBttn dark">Placeholder</a>
+  <nav class="navbar navbar-expand-lg bg-light sticky-top p-0">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+              <img src="./template/Images/Logo/ITBANK.png" alt="" width="auto" height="75" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fa fa-chevron-down" style="color:white;"></span>
+            </button>
+            <div class="collapse navbar-collapse text-end mb-2" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              </ul>
+              <button class="btn btn-dark btn-outline-success btn-lg shadow-lg text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                HOMEBANKING
+              </button>
             </div>
-            <div class="cell pos-2 center middle " >
-                <a href="/index.html" class="logo">ITBANK</a>
+            
+  </nav>
+  <div class="collapse" id="collapseExample">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 col-lg-6 bg-light g-5 d-flex  justify-content-center">
+          <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                <span id="passwordHelpInline" class="form-text">
+                  Must be 8-20 characters long.
+                </span>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <a class="btn btn-light btn-outline-success btn-lg shadow-lg" href="./template/bank.html" role="button">LOGIN
+              </a>
+            </form>
+      </div>
+    </div>
+</div>
+  <div class="container">
+    <div class="row justify-content-center gy-3 gy-lg-5">
+      <div class="col-12 col-lg-10 ">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="cell pos-3 right middle">
-                <a href="/template/bank.html" class="bankingBttn dark">Online Banking</a>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./template/Images/slide-1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./template/Images/slide-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./template/Images/slide-3.jpg" class="d-block w-100" alt="...">
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </nav>
-    <div class="page-header"></div>
-    <!-- <img src="Images/principal.jpg" style="width: 1500px;padding-left: 110px;"> -->
-    
-        
-            <div class="container-home">
-                <div class="grid-home-1 botleftborder">
-                    <h1 class="titulo-1">Preocupate por disfrutar, que nosotros nos preocupamos por tus finanzas.</h1>
-                </div>
-                <div class="grid-home-2 botleftborder">
-                    <h3 class="subtitulo-1">Descubri una nueva forma de administrar tus cuentas.</h3>
-                </div>
-                <div class="grid-home-3 topborder">
-                    <img src="/template/Images/principal-2.jpg">
-                </div>
-            </div>
-        
-    
-    <footer>
-        <p>Autor: Lorenzo Lara</p>
-        <p><a>Mail: lorenzolara12@gmail.com</a></p>
-        <p>Comision 4</p>
-        <p>Grupo 1</p>
-    </footer>
-
-    
+      </div>
+      <div class="col-12 col-lg-10 ">
+        <div class="card">
+          <img src="./template/Images/footer-1.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay text-light position-absolute top-50 start-0 translate-middle-y fw-bolder">
+            <h5 class="card-title fw-bolder">Descubri todos nuestros beneficios.</h5>
+            <p class="card-text">Conoce mas de todos nuestros locales adheridos y disfruta mas de tu sueldo.</p>
+            <a href="#" class="btn btn-primary">Unirse</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
-
