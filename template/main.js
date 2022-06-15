@@ -1,18 +1,43 @@
 
-let compra= document.querySelector('compra');
-let venta= document.querySelector('venta');
+let compra= document.querySelectorAll('#valorCompra');
+let venta= document.querySelectorAll('#valorVenta');
+let variacion= document.querySelectorAll('#variacion');
+console.log(compra)
+
+function imprimir(arr, data, atrib)
+{
+    let i = 0;
+    for(let elem of arr)
+    {
+        elem.innerHTML= `$${data[i].casa[atrib]}`
+        console.log( data[i].casa[atrib]);
+        i++;
+    }  
+}
 
 fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
   .then(response => response.json())
   .then(data => {
-     /* compra.innerHTML= `
-      ${data[0].casa.compra}
-      ` */
-      console.log(data[0].casa.compra);
+      
+   imprimir(compra, data, 'compra' );
+    
+   imprimir(venta, data, 'venta');
+
+   
+
+   let i = 0;
+    for(let elem of variacion)
+    {
+        elem.innerHTML= `VARIACION ${data[i].casa.variacion} % `
+        console.log(data[i].casa.variacion);
+        i++;
+    }  
+   
+      
   });
+
+
 
  
 
 
-// compra.innerHTML = fet.PromiseResult[0].casa.compra;
-// console.log(fet.PromiseResult);
